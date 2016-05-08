@@ -1,10 +1,12 @@
-/////////////////////////////////////////////////////////
-//
-// Student: Mandris Andrei-Traian
-// Homework: 1
-//
-/////////////////////////////////////////////////////////
 package minicomputer;
+/**
+ * 
+ * @author Andrei
+ * @version 1.0
+ * Creates an instance of MiniComputer class with 9 instructions.
+ *
+ */
+
 
 public class Main {
 

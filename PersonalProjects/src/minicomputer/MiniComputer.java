@@ -1,18 +1,10 @@
-/////////////////////////////////////////////////////////
-//
-// Student: Mandris Andrei-Traian
-// Homework: 1
-//
-/////////////////////////////////////////////////////////
-
 package minicomputer;
 
 /**
- * 
+ *
  * @author Andrei
  * @version 1.0
  */
-
 public class MiniComputer extends VSP {
 
     public Instruction[] mem;   //instruction memory
@@ -22,8 +14,10 @@ public class MiniComputer extends VSP {
         super();
         mem = new Instruction[SIZE]; //memory for 256 instructions
     }
+
     /**
-     * Runs the execute method from the super class with mem[pc] as parameter while halt is not true.
+     * Runs the execute method from the super class with mem[pc] as parameter
+     * while halt is not true.
      */
     public void execute() {
         //the function to execute all the instructions in the memory
@@ -31,8 +25,11 @@ public class MiniComputer extends VSP {
             super.execute(mem[pc]);
         }
     }
+
     /**
-     * Getter of the value found in r vector at the position specified as parameter
+     * Getter of the value found in r vector at the position specified as
+     * parameter
+     *
      * @param n - the index from the r vector
      * @return - the value from the r vector at the position n
      */

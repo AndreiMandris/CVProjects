@@ -1,9 +1,3 @@
-/////////////////////////////////////////////////////////
-//
-// Student: Mandris Andrei-Traian
-// Homework: 1
-//
-/////////////////////////////////////////////////////////
 package minicomputer;
 
 /**
@@ -97,8 +91,8 @@ public class VSP {
     }
 
     /**
-     * r[dest] <- value
- * @par
+     * r[dest] <- value @par
+     *
      *
      * am dest is the index of the vector r for the location in which the value
      * will be updated
@@ -113,7 +107,8 @@ public class VSP {
 
     /**
      * Adds the number from the address specified in the second parameter to the
-     * number from the address specified in the third parameter and stores the result at the 
+     * number from the address specified in the third parameter and stores the
+     * result at the
      *
      * @param dest
      * @param src1 - index to the first term
@@ -128,10 +123,11 @@ public class VSP {
 
     /**
      * r[dest] <- r[src1] - r[src2]
-     * 
+     *
      * @param dest - the index of the r vector where the result is stored
      * @param src1 - the index of the r vector from where the minuend is taken
-     * @param src2 - the index of the r vector from where the subtrahend is taken
+     * @param src2 - the index of the r vector from where the subtrahend is
+     * taken
      */
     private void sub(int dest, int src1, int src2) {
         r[dest] = r[src1] - r[src2];
@@ -139,11 +135,13 @@ public class VSP {
         halt = false;
         pc++;
     }
-/**
- * Shows if the two parameters are equal
- * @param src1 - the index of the r vector for the first number
- * @param src2 - the index of the r vector for the second number
- */
+
+    /**
+     * Shows if the two parameters are equal
+     *
+     * @param src1 - the index of the r vector for the first number
+     * @param src2 - the index of the r vector for the second number
+     */
     private void cmp(int src1, int src2) {
         if (r[src1] == r[src2]) {
             flag = true;
@@ -153,19 +151,25 @@ public class VSP {
         halt = false;
         pc++;
     }
-/**
- * Assigns to PC(Program Counter) a value
- * @param value - the value assigned to PC (program counter)
- */
+
+    /**
+     * Assigns to PC(Program Counter) a value
+     *
+     * @param value - the value assigned to PC (program counter)
+     */
     private void jmp(int value) {
         pc = value;
         flag = false;
         halt = false;
     }
-/**
- *  Assigns to PC(Program Counter) the value specified as parameter only if the flag is true
- * @param value - the value that is assigned to PC(Program Counter) only if the flag is true
- */
+
+    /**
+     * Assigns to PC(Program Counter) the value specified as parameter only if
+     * the flag is true
+     *
+     * @param value - the value that is assigned to PC(Program Counter) only if
+     * the flag is true
+     */
     private void jmpc(int value) {
         if (flag) {
             pc = value;
@@ -175,9 +179,10 @@ public class VSP {
         flag = false;
         halt = false;
     }
-/**
- * Stops the execute method
- */
+
+    /**
+     * Stops the execute method
+     */
     private void halt() {
         halt = true;
         flag = false;
