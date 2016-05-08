@@ -18,7 +18,7 @@ public class ElectronicBook {
     private static final int Y2012 = 2012;
     private static final int Y2013 = 2013;
     private static final int Y2014 = 2014;
-    private static final int Y2015 = 1015;
+    private static final int Y2015 = 2015;
     private static final int Y2016 = 2016;
 
     enum YearOfPublication {
